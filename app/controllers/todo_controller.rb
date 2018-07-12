@@ -4,7 +4,7 @@ class TodoController < ApplicationController
     def show
          @todoname= "shopping"
          @todopomodoro=5
-         @todo+ TOdo.find_by_id (params[:id}])
+         @todo= ToDo.find_by_id (params[:id])
          todo_id=params[:id]
          if todo_id=="1"
              @todoname=="do homweork"
